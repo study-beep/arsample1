@@ -8,6 +8,9 @@
     <body style="margin: 0; overflow: hidden">
         <a-scene embedded arjs="debugUIEnabled:false;">
             <a-entity camera></a-entity>
+            <a-assets>
+                <a-asset-item id="penguin" src="https://github.com/study-beep/arsample1/blob/main/assets/penguin.gltf"></a-asset-item>
+            </a-assets>
 
             <!-- Markerを表示した際の処理を以下に記述する -->
             <!-- ARマーカーのファイル名をここで指定する -->
@@ -17,7 +20,7 @@
                 <!-- 画像の大きさは width と height で設定可能 -->
                 <!-- 画像を表示させる位置は position で設定可能 -->
                 <!-- 画像を水平に表示させる場合は下記の rotation でOK -->
-                <a-image width="5" height="5" position="0.2 0.4 0.4" rotation="-90 0 0" src="img/icon.png">
+                <a-image width="5" height="5" position="0.2 0.4 0.4" rotation="-90 0 0" src="">
                 </a-image>
 
             </a-marker>
